@@ -1,0 +1,388 @@
+html, body, ul, ol, li, h1, h2, h3, h4, h5, h6, p, form, input, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Avenir Next";
+}
+
+li {
+  list-style: none;
+}
+
+.header {
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  height: auto;
+}
+
+.menu {
+  background: black;
+  height: 90px;
+}
+
+.menu h1 {
+  font-size: 36px;
+  color: #fff;
+  float: left;
+  text-align: center;
+  margin: auto;
+  padding: 20px 40px 20px 40px;
+}
+
+.menu ul li {
+  padding: 0 25px;
+  margin: auto;
+  float: right;
+}
+
+.menu ul li:hover a {
+  color: #e79c2a;
+}
+
+.menu li a {
+  font-family: "Avenir Next";
+  font-size: 24px;
+  display: block;
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  text-align: center;
+  margin: auto;
+  padding: 33px 20px 33px 20px;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.row {
+  text-align: center;
+}
+
+.column {
+  float: left;
+  width: 20%;
+  height: 40%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+  .avatar {
+    vertical-align: middle;
+    width: 30px;
+    height: auto;
+    border-radius: 50%;
+    -webkit-border-radius: ;
+    -moz-border-radius: ;
+    -ms-border-radius: ;
+    -o-border-radius: ;
+  }
+  .screen-body {
+    flex-direction: column;
+  }
+  .screen-body-item.left {
+    margin-bottom: 30px;
+  }
+  .app-title {
+    flex-direction: row;
+  }
+  .app-title span {
+    margin-right: 12px;
+  }
+  .app-title:after {
+    display: none;
+  }
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 30px;
+  height: auto;
+  border-radius: 50%;
+  -webkit-border-radius: ;
+  -moz-border-radius: ;
+  -ms-border-radius: ;
+  -o-border-radius: ;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding-bottom: 10px;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 10px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+body {
+  background-color: #f4f6ff;
+  opacity: 0.8;
+  font-family: "Alegreya";
+}
+
+.title {
+  width: 100%;
+  font-size: 14px;
+}
+
+/* Tidak Bekerja
+.introm {
+  padding: 1px;
+  width: 50%;
+  text-align: center;
+  text-decoration: none;
+  margin: 0 auto;
+  background-color: rgba(34, 49, 52, 0.9);
+  border-radius: 5px;
+  color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 45px;
+}
+*/
+
+.intro {
+  padding: 1px;
+  width: 50%;
+  text-align: center;
+  text-decoration: none;
+  margin: 0 auto;
+  padding: 45px 0 25px 0;
+}
+
+.intro hr {
+  width: 50px;
+  border: 1px solid black;
+}
+
+.intro1 {
+  padding: 1px;
+  width: 50%;
+  text-align: center;
+  text-decoration: none;
+  margin: 0 auto;
+  padding: 75px 0 0 0;
+}
+
+.intro1 hr {
+  width: 50px;
+  border: 1px solid black;
+}
+
+.card img {
+  padding: 10% 10%;
+}
+
+.big-image {
+  height: 550px;
+  width: auto;
+  position: relative;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url(https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.overlay h1 {
+  font-size: 60px;
+  color: #e79c2a;
+  letter-spacing: 0px;
+  margin: 0 0 8px;
+  z-index: 100;
+}
+
+.overlay p {
+  padding-bottom: 20px;
+  color: #fbd46f;
+  margin: 0;
+  font-size: 20px;
+}
+
+.footer {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+#love {
+  font-size: 15px;
+  color: #ff0000;
+}
+
+*:focus {
+  outline: 0;
+}
+
+.wrapper {
+  margin: 75px auto 0;
+  width: 70%;
+  margin-bottom: 75px;
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  width: 100%;
+  margin: 0;
+}
+
+form * {
+  font-size: 20px;
+  letter-spacing: 0.075em;
+  font-weight: 300;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+form .field {
+  width: 100%;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+form .field label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(90deg, #e79c2a, #e79c2a);
+  width: 100%;
+  height: 64px;
+  transition: width 333ms ease-in-out;
+  text-align: center;
+  padding: 18px 0;
+  -webkit-transition: width 333ms ease-in-out;
+  -moz-transition: width 333ms ease-in-out;
+  -ms-transition: width 333ms ease-in-out;
+  -o-transition: width 333ms ease-in-out;
+}
+
+form .field input[type="text"], form .field textarea {
+  border: none;
+  width: 100%;
+  height: 64px;
+  margin: 0;
+  padding-left: 19.5%;
+  color: #e79c2a;
+}
+
+form #msg {
+  height: 64px;
+  resize: none;
+  transition: all 333ms ease-in-out;
+  padding-top: 18px;
+}
+
+form textarea:focus#msg, form textarea:not(:placeholder-shown)#msg {
+  height: 166px;
+}
+
+form input[type="text"]:focus+label, form input[type="text"]:not(:placeholder-shown)+label, form textarea:focus+label, form textarea:not(:placeholder-shown)+label, form .field:hover label {
+  width: 18%;
+}
+
+form input[type="submit"] {
+  background: linear-gradient(90deg, #e79c2a, #e79c2a);
+  -webkit-appearance: none;
+  border: none;
+  position: relative;
+  padding: 13px 50px;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+form input[type="submit"]:hover, form input[type="submit"]:focus {
+  background: #e79c2a;
+}
+
+.button {
+  background-color: #e79c2a;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 20px;
+  border: solid 1px #e79c2a;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  font-weight: bold;
+}
+
+.button:hover {
+  background-color: #ebc080;
+}
+
+.button a {
+  text-decoration: none;
+  color: black;
+}
